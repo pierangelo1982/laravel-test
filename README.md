@@ -26,3 +26,8 @@ crea app:
 start app:
 `> php artisan serve`
 
+create an empty controller:
+`> php artisan make:controller PostsController`
+
+create a basic Crud Controller
+`> php artisan make:controller --resource PostsController`
