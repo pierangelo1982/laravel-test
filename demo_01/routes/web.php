@@ -24,3 +24,8 @@ Route::get('/hello', function() {
 Route::get('/number/{id}', function($id) {
     return ("My Number " . $id);
 });
+
+Route::get('/prova', ['as' => 'profile', function () {
+    $url = route('profile');
+    return $url;
+}]);
