@@ -21,7 +21,7 @@ sudo apt install php7.4-common \
 
 
 crea app:
-`> composer create-project --prefer-dist laravel/laravel`
+`> composer create-project --prefer-dist laravel/laravel nomeapp`
 
 start app:
 `> php artisan serve`
