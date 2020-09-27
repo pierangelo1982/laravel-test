@@ -31,3 +31,23 @@ create an empty controller:
 
 create a basic Crud Controller
 `> php artisan make:controller --resource PostsController`
+
+migratios:
+`> ss`
+
+
+
+### mysql
+
+```
+docker run --name test-mysql \
+    -e MYSQL_ROOT_PASSWORD=123456789 \
+    -d mysql:5.7
+```
+
+```
+docker run --name test-phpmyadmin \
+    -d --link test-mysql:db \
+    -p 8081:80 phpmyadmin/phpmyadmin
+```
+
