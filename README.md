@@ -33,8 +33,16 @@ create a basic Crud Controller
 `> php artisan make:controller --resource PostsController`
 
 migratios:
-`> ss`
+`> php artisan make:migration create_posts_table`
 
+mugrate and named table:
+`> php artisan make:migration create_posts_table --create=users`
+
+migrate:
+`> php artisan migrate`
+
+rollback, remove migrations:
+`> php artisan migrate:rollback`
 
 
 ### mysql
