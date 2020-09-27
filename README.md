@@ -32,7 +32,7 @@ create an empty controller:
 create a basic Crud Controller
 `> php artisan make:controller --resource PostsController`
 
-migratios:
+migrations:
 `> php artisan make:migration create_posts_table`
 
 mugrate and named table:
