@@ -44,7 +44,8 @@ migrate:
 rollback, remove migrations:
 `> php artisan migrate:rollback`
 
-
+add update migrations schema:
+`> php artisan make:migration add_isactive_to_posts_table --table=posts`
 ### mysql
 
 ```
