@@ -71,3 +71,26 @@ class AuthServiceProvider extends ServiceProvider
 ```
 
 go to `config/auth.php` and set the driver option of the api authentication guard to passport.
+```
+    'guards' => [
+        'web' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+
+        /*
+        'api' => [
+            'driver' => 'token',
+            'provider' => 'users',
+            'hash' => false,
+        ],
+        */
+        'api' => [
+            'driver' => 'passport',
+            'provider' => 'users',
+        ],
+    ],
+```
+
+
+php artisan make:controller Auth/AuthController
