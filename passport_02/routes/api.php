@@ -20,7 +20,7 @@ Route::post('/login', [AuthController::class, 'login']);
 
 
 Route::middleware('auth:api')->group(function() {
-    Route::post('/details', [AuthController::class, 'user_info']);
+    Route::get('/details', [AuthController::class, 'user_info']);
 });
 
 
